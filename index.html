@@ -15,11 +15,18 @@
         <div class="landscape"></div>
       </div>
       <img class="sun" src="./sun.png" alt="sun" width="1024" height="1024">
-      <figure class="liza-container">
+      <figure class="liza-container" onclick="play()">
         <img class="liza" alt="Liza" src="./liza.png" width="1000" height="1218" >
       </figure>
       <img class="geo-storm" alt="geo storm" src="./geo-storm.png" height="653" width="747" />
     </div>
   </div>
+  <audio id="track" preload src="./track.mp3"></audio>
+  <script>
+    function play() {
+      const player = document.getElementById("track");
+      player.paused ? player.play() : player.pause();
+    }
+  </script>
 </body>
 </html>

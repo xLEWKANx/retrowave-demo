@@ -59,7 +59,7 @@ body {
   transform: translateY(-50%);
   width: 200px;
   height: auto;
-  filter: brightness(120%) hue-rotate(50deg);
+  filter: brightness(110%);
   position: absolute;
   background-image: url("./liza.png");
   background-size: cover;
@@ -69,31 +69,31 @@ body {
   width: 100%;
   height: 100%;
   z-index: 1;
+  filter: brightness(115%);
 }
 
 .liza-container::after, .liza-container::before {
   content: "";
-  z-index:21;
   display: block;
   top: 0;
   left: 0;
-  opacity: 0.5;
+  opacity: 0.8;
   position: absolute;
   width: 100%;
   height: 100%;
   background: inherit;
-  
+  cursor: pointer;
 }
 
 .liza-container::before {
-  left: -0.5px;
-  top: -0.5px;
+  left: -1.25px;
+  top: -1.25px;
   filter: brightness(115%) hue-rotate(10deg);
 }
 
 .liza-container::after {
-  left: 0.5px;
-  top: -0.5px;
+  left: 1.25px;
+  top: -1.25px;
   filter: brightness(115%) hue-rotate(270deg);
 
 }
@@ -104,8 +104,7 @@ body {
   position: absolute;
   margin: 0 auto;
   perspective: 180px;
-  perspective-origin: 50% 40%;
-  
+  perspective-origin: 50% 50%;
 }
 
 .landscape {
@@ -113,7 +112,7 @@ body {
   width: 300%;
   left: -100%;
   height: 100%;
-  bottom: -50%;
+  bottom: -30vh;
   background-image: -webkit-linear-gradient(top, #cf33d9 2px, transparent 2px),
     -webkit-linear-gradient(left, #cf33d9 2px, transparent 2px);
   background-size: 50px 50px, 80px 80px;
